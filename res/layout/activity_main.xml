@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button 
+        android:id="@+id/btn_basic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/basic"
+        />
+    
+    <Button 
+        android:id="@+id/btn_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_basic"
+        android:layout_marginTop="5dp"
+        android:text="@string/withTilte"
+        />
+    
+    <Button 
+        android:id="@+id/btn_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_text"
+        android:layout_marginTop="5dp"
+        android:text="@string/error"
+        />
+    
+    <Button 
+        android:id="@+id/btn_warn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_error"
+        android:layout_marginTop="5dp"
+        android:text="@string/warn"
+        />
+    
+    <Button 
+        android:id="@+id/btn_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_warn"
+        android:layout_marginTop="5dp"
+        android:text="@string/success"
+        />
+
+</RelativeLayout>
