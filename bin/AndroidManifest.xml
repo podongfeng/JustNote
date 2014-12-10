@@ -26,6 +26,14 @@
             android:name="com.podongfeng.justnote.MainActivity"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name="com.podongfeng.justnote.MenuActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.podongfeng.justnote.DetailActivity"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

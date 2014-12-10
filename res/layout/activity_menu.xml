@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+    
+    <Button 
+        android:id="@+id/btn_new_note"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/burlywood"
+        android:text="@string/new_note"
+        android:textSize="28sp"
+        />
+    
+    <ListView 
+        android:id="@+id/lv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_new_note"
+        android:layout_marginTop="10dp"
+        ></ListView>
+    
+</RelativeLayout>

@@ -1,0 +1,9 @@
+package com.podongfeng.justnote.util;
+
+public class Const {
+
+	/**
+	 * Êý¾Ý¿âÃû³Æ
+	 */
+	public static final String DB_NAME = "note.db";
+}

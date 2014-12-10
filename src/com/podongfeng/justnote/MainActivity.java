@@ -21,9 +21,6 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		// 设置无标题
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		// 设置全屏
-//		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-//				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_main);
 		
 		// 基本dialog 

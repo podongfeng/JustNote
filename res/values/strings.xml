@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">FirstSweetDialog</string>
+    <string name="app_name">简·笔记</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="dialog_default_title">Here\'s a message!</string>
@@ -13,5 +13,8 @@
     <string name="warn">警告信息弹框</string>
     <string name="success">成功信息弹框</string>
     <string name="welcome">简·笔记</string>
+    <string name="new_note">新笔记...</string>
+    <string name="save">保存</string>
+    <string name="hint">写点什么呢...</string>
 
 </resources>

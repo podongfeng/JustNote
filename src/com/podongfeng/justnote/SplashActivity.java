@@ -23,9 +23,6 @@ public class SplashActivity extends Activity implements AnimationListener {
 		super.onCreate(savedInstanceState);
 		 // 设置无标题  
         requestWindowFeature(Window.FEATURE_NO_TITLE); 
-        // 设置全屏  
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, 
-                WindowManager.LayoutParams.FLAG_FULLSCREEN); 
         setContentView(R.layout.activity_splash);
 //        Handler handler = new Handler();
 //        handler.postDelayed(new Runnable() {
@@ -49,7 +46,7 @@ public class SplashActivity extends Activity implements AnimationListener {
 	@Override
 	public void onAnimationEnd(Animation animation) {
 		Intent intent = new Intent();
-		intent.setClass(getApplicationContext(), MainActivity.class);
+		intent.setClass(getApplicationContext(), MenuActivity.class);
 		startActivity(intent);
 		finish();
 	}
