@@ -413,11 +413,12 @@ int drawable error_circle 0x7f02005b
 int drawable gray_button_background 0x7f02005c
 int drawable ic_launcher 0x7f02005d
 int drawable red_button_background 0x7f02005e
-int drawable splash 0x7f02005f
-int drawable success_bow 0x7f020060
-int drawable success_circle 0x7f020061
-int drawable warning_circle 0x7f020062
-int drawable warning_sigh 0x7f020063
+int drawable shape 0x7f02005f
+int drawable splash 0x7f020060
+int drawable success_bow 0x7f020061
+int drawable success_circle 0x7f020062
+int drawable warning_circle 0x7f020063
+int drawable warning_sigh 0x7f020064
 int id action_bar 0x7f05001f
 int id action_bar_activity_content 0x7f050015
 int id action_bar_container 0x7f05001e

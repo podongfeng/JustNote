@@ -62,6 +62,8 @@ public class NoteListAdapter extends BaseAdapter {
 		updateTimeBuffer.append(calendar.get(Calendar.YEAR)).append("Äê");
 		updateTimeBuffer.append(calendar.get(Calendar.MONTH)+1).append("ÔÂ");
 		updateTimeBuffer.append(calendar.get(Calendar.DATE)).append("ÈÕ");
+		updateTimeBuffer.append(" ");
+		updateTimeBuffer.append(calendar.get(Calendar.HOUR_OF_DAY)).append(":").append(calendar.get(Calendar.MINUTE));
 		holder.tv_item_update_time.setText(String.valueOf(list.get(position).get("age")));
 		holder.tv_item_update_time.setText(updateTimeBuffer.toString());
 		return convertView;

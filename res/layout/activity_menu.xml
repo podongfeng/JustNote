@@ -8,7 +8,7 @@
         android:id="@+id/btn_new_note"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@color/burlywood"
+        android:background="@drawable/shape"
         android:text="@string/new_note"
         android:textSize="28sp"
         />
@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_new_note"
         android:layout_marginTop="10dp"
+        android:listSelector="@android:color/transparent"
         ></ListView>
     
 </RelativeLayout>

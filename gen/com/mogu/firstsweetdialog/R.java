@@ -1589,11 +1589,12 @@ containing a value of this type.
         public static final int gray_button_background=0x7f02005c;
         public static final int ic_launcher=0x7f02005d;
         public static final int red_button_background=0x7f02005e;
-        public static final int splash=0x7f02005f;
-        public static final int success_bow=0x7f020060;
-        public static final int success_circle=0x7f020061;
-        public static final int warning_circle=0x7f020062;
-        public static final int warning_sigh=0x7f020063;
+        public static final int shape=0x7f02005f;
+        public static final int splash=0x7f020060;
+        public static final int success_bow=0x7f020061;
+        public static final int success_circle=0x7f020062;
+        public static final int warning_circle=0x7f020063;
+        public static final int warning_sigh=0x7f020064;
     }
     public static final class id {
         public static final int action_bar=0x7f05001f;

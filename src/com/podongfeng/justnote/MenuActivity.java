@@ -15,6 +15,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -42,6 +44,17 @@ public class MenuActivity extends Activity implements OnClickListener {
 		super.onResume();
 		noteList = dbHandler.getNoteList();
 		lvMenu.setAdapter(new NoteListAdapter(getApplicationContext(), noteList));
+		lvMenu.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				Integer noteId = Integer.parseInt(String.valueOf(noteList.get(position).get("id")));
+				Intent intent = new Intent();
+				intent.setClass(getApplicationContext(), DetailActivity.class);
+				intent.putExtra("id", noteId);
+				startActivity(intent);
+			}
+		});
 	}
 	
 	private void initView() {

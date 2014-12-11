@@ -70,9 +70,6 @@ public class DbHandler {
 	}
 
 	public void saveNote(Map<String, String> map) {
-		if (map.containsKey("id")) {
-
-		}
 		String content = String.valueOf(map.get("content"));
 		Calendar calendar = Calendar.getInstance();
 		int currentTimeInt = (int) (calendar.getTimeInMillis() / 1000);
@@ -86,7 +83,7 @@ public class DbHandler {
 			cv.put("content", content);
 			cv.put("update_time", currentTimeStr);
 			cv.put("update_month", updateMonthStr);
-			sqliteDB.update("note", cv, "id=", new String[] { id });
+			sqliteDB.update("note", cv, "id=?", new String[] { id });
 		} else {
 			ContentValues cv = new ContentValues();
 			cv.put("content", content);
@@ -99,7 +96,7 @@ public class DbHandler {
 	
 	public List<Map<String, Object>> getNoteList() {
 		List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
-		Cursor cursor = sqliteDB.rawQuery("select * from note order by update_time", null);
+		Cursor cursor = sqliteDB.rawQuery("select * from note order by update_time desc", null);
 		while (cursor.moveToNext()) {
 			Map<String, Object> map = new HashMap<String, Object>();
 			map.put("id", EasyCursor.getInt(cursor, "id"));
@@ -108,6 +105,14 @@ public class DbHandler {
 			list.add(map);
 		}
 		return list;
+	}
+	
+	public String getContentById(Integer id) {
+		Cursor cursor = sqliteDB.rawQuery("select content from note where id=?", new String[]{ String.valueOf(id) });
+		if(cursor.moveToNext()){
+			return EasyCursor.getString(cursor, "content");
+		}
+		return null;
 	}
 
 }
